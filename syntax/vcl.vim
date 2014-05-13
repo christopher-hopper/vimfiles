@@ -1,9 +1,10 @@
 " Vim syntax file
 " Filename:     vcl.vim
 " Language:     Varnish configuation Language, http://www.varnish-cache.org/wiki/VCL
-" Maintainer:   Elan RuusamÃ¤e <glen@delfi.ee>
-" Version Info: $Revision: 1.7 $
-" Last Change:  $Date: 2010/04/06 08:24:28 $ UTC
+" Maintainer:   Elan Ruusamäe <glen@delfi.ee>
+" URL:          http://cvs.pld-linux.org/packages/vim-syntax-vcl/vcl.vim
+" Version Info: $Revision: 1.11 $
+" Last Change:  $Date: 2012/01/15 18:08:03 $ UTC
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -60,10 +61,10 @@ syn match  vclOption   /server\.\(ip\|port\)/
 syn match  vclOption   /req\.\(hash\|request\|url\|proto\|backend\.healthy\|backend\|grace\|xid\|restarts\)/
 " bereq
 syn match  vclOption   /bereq\.\(request\|url\|proto\|connect_timeout\|first_byte_timeout\|between_bytes_timeout\)/
-" beresp
-syn match  vclOption   /beresp\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\|saintmode\)/
 " obj
 syn match  vclOption   /obj\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\)/
+" beresp
+syn match  vclOption   /beresp\.\(proto\|status\|response\|cacheable\|ttl\|lastuse\|hits\|hash\|grace\|prefetch\|saintmode\)/
 " resp
 syn match  vclOption   /resp\.\(proto\|status\|response\)/
 " common: http.HEADERNAME
