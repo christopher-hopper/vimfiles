@@ -128,8 +128,8 @@ endif
 " *** Functions ***
 
 " Highlight all instances of the word under the cursor, when idle.
-" Map <F12> key to toggle Auto Highlighting.
-nnoremap <f11> :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>
+" Map <F8> key to toggle Auto Highlighting.
+nnoremap <f8> :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>
 function! AutoHighlightToggle()
     let @/ = ''
     if exists('#auto_highlight')
