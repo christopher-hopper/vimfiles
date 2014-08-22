@@ -31,21 +31,21 @@ To get up and running, install vim to the usual location, then:
   
   - To install for the current user only:
 
-          mv ~/.vim ~/.vim.original
+          [[ -d ~/.vim ]] && mv ~/.vim ~/.vim.original
           git clone git@github.com:christopher-hopper/vimfiles.git ~/.vim
   - To install for all users:
 
-          sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
+          [[ -d /usr/share/vim/vimfiles ]] && sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
           sudo git clone git@github.com:christopher-hopper/vimfiles.git /usr/share/vim/vimfiles
 1. **Symlink the vimrc configuration file**
   
   - To install for the current user only:
 
-          mv ~/.vimrc ~/.vimrc.original
+          [[ -f ~/.vimrc ]] && mv ~/.vimrc ~/.vimrc.original
           ln -s ~/.vim/vimrc ~/.vimrc
   - To install for all users:
 
-          sudo mv /etc/vim/vimrc /etc/vimrc.original
+          [[ -f /etc/vim/vimrc ]] && sudo mv /etc/vim/vimrc /etc/vimrc.original
           sudo ln -s /usr/share/vim/vimfiles/vimrc /etc/vim/vimrc
 1. **Refresh the vim help files**
 
