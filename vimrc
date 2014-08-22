@@ -1,7 +1,9 @@
-" An example for a vimrc file.
+" An excellent PHP Web Application Developers vimrc file.
 " 
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
+" Maintainer:   Christopher Hopper <christopherjfhopper[at]gmail[dot]com>
+" Attribution:  Bram Moolenaar <Bramd[at]vim[dot]org>
+" Source Code:  https://github.com/christopher-hopper/vimfiles
+" Git Remote:   git@github.com:christopher-hopper/vimfiles.git
 " 
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
