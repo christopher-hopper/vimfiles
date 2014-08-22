@@ -182,17 +182,15 @@ else
     nmap ,cl :let @*=expand("%:p")<CR>
 endif
 
+" Got statusline? Make useful.
 if has("statusline")
-    " useful status line
-    "set statusline=%<%f\ %h%m%r%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-
-    " git fugitive statusline
-    "set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-
     silent! call fugitive#statusline()
     if exists('*fugitive#statusline') 
-        " useful git fugitive statusline
+        " Most useful statusline.
         set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+    else
+        " Useful enough statusline.
+        set statusline=%<%f\ %h%m%r%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
     endif
 
     " show statusline always
