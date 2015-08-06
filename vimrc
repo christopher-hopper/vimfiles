@@ -29,6 +29,9 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+" Set the <leader> used in mappings.
+let mapleader=","
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
