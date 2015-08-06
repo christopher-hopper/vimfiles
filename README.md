@@ -62,11 +62,11 @@ To get up and running, install vim to the usual location, then:
   
   At the time of writing, the following plug-ins have been included and configured as part of vimfiles:
 
-  |Plugin Name          | Source              | Vim Documentation                 |
-  |---------------------|---------------------|-----------------------------------|
-  | fugitive            | [vim-fugitive][]    | [fugitive documentation][]        |
-  | NERD commenter      | [nerdcommenter][]   | [NERD_commenter documentation][]  |
-  | Secure Modelines    | [securemodelines][] | [securemodelines documentation][] |
+  |Plugin Name          | Version | Source              | Vim Documentation                 |
+  |---------------------|---------|---------------------|-----------------------------------|
+  | fugitive            | 2.0     | [vim-fugitive][]    | [fugitive documentation][]        |
+  | NERD commenter      | 2.3.0   | [nerdcommenter][]   | [NERD_commenter documentation][]  |
+  | Secure Modelines    | -       | [securemodelines][] | [securemodelines documentation][] |
 
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
 [fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
