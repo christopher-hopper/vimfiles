@@ -19,6 +19,8 @@ endif
 " Add bundled vim plug-ins to the runtime path.
 " Node.vim - moll/vim-node
 set runtimepath^=$HOME/.vim/bundle/node,$VIM/vimfiles/bundle/node
+" javascript-syntax - jelera/vim-javascript-syntax
+set runtimepath^=$HOME/.vim/bundle/javascript-syntax,$VIM/vimfiles/bundle/javascript-syntax
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
