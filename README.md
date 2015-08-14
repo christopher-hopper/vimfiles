@@ -10,6 +10,7 @@ This vim customization collection was created primarily to support development f
 1. Apache configuration and logs
 1. PHP code
 1. Drupal 
+2. JavaScript, including jQuery and nodejs
 1. Varnish configurations
 1. Puppet
 1. Vagrant
@@ -21,7 +22,7 @@ This vim customization collection was created primarily to support development f
 
 To use these customizations for vim, you need to have vim installed. 
 
-I currently use, test and update this collection of `vimfiles` with vim 7.4, but they would probably work fine with any vim 7.x install. 
+I currently use, test and update this collection of `vimfiles` with vim v7.4, but they should work fine with any vim install >= v7.2. 
 
 ## Installation
 
@@ -32,11 +33,13 @@ To get up and running, install vim to the usual location, then:
   - To install for the current user only:
 
           [[ -d ~/.vim ]] && mv ~/.vim ~/.vim.original
-          git clone git@github.com:christopher-hopper/vimfiles.git ~/.vim
+          git clone https://github.com/christopher-hopper/vimfiles.git ~/.vim
   - To install for all users:
 
-          [[ -d /usr/share/vim/vimfiles ]] && sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
-          sudo git clone git@github.com:christopher-hopper/vimfiles.git /usr/share/vim/vimfiles
+          [[ -d /usr/share/vim/vimfiles ]] && \
+            sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
+          sudo git clone https://github.com/christopher-hopper/vimfiles.git \
+            /usr/share/vim/vimfiles
 1. **Symlink the vimrc configuration file**
   
   - To install for the current user only:
@@ -47,14 +50,6 @@ To get up and running, install vim to the usual location, then:
 
           [[ -f /etc/vim/vimrc ]] && sudo mv /etc/vim/vimrc /etc/vimrc.original
           sudo ln -s /usr/share/vim/vimfiles/vimrc /etc/vim/vimrc
-1. **Refresh the vim help files**
-
-  - When installed for the current user only:
-
-          vim -c 'helptags $HOME/.vim/doc | q'
-  - When installed for all users:
-
-          sudo vim -c 'helptags $VIM/vimfiles/doc | q'
 
 ## FAQ
 
@@ -64,22 +59,26 @@ To get up and running, install vim to the usual location, then:
 
   | Plugin Name          | Version  | Source                   | Documentation                          |
   |----------------------|----------|--------------------------|----------------------------------------|
-  | git                  | 6.0+18   | [vim-git][]              | [fugitive documentation][]             |
-  | fugitive             | 2.2      | [vim-fugitive][]         | [git documentation][]                  |
+  | pathogen             | 6.0+18   | [vim-pathogen][]         | [vim-pathogen documentation][]         |
+  | git                  | 6.0+18   | [vim-git][]              | [vim-git documentation][]              |
+  | fugitive             | 2.2      | [vim-fugitive][]         | [vim-fugitive documentation][]         |
   | NERD commenter       | 2.3.0    | [nerdcommenter][]        | [NERD_commenter documentation][]       |
-  | Secure Modelines     | 20140926 | [securemodelines][]      | [securemodelines documentation][]      |
+  | Secure Modelines     | [`bfbecf0`][securemodelines bfbecf0] | [securemodelines][]      | [securemodelines documentation][]      |
   | javascript libraries | 0.4      | [javascript-libraries][] | [javascript-libraries documentation][] |
   | javascript syntax    | 0.8+31   | [javascript-syntax][]    | [javascript-syntax documentation][]    |
   | node (nodejs)        | 0.8.1+14 | [vim-node][]             | [vim-node documentation][]             |
 
+[vim-pathogen]: https://github.com/tpope/vim-pathogen
+[vim-pathogen documentation]: http://www.vim.org/scripts/script.php?script_id=2332
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
-[fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
+[vim-fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-git]: https://github.com/tpope/vim-git
-[git documentation]: http://www.vim.org/scripts/script.php?script_id=1654
+[vim-git documentation]: http://www.vim.org/scripts/script.php?script_id=1654
 [nerdcommenter]: https://github.com/scrooloose/nerdcommenter
 [NERD_commenter documentation]: http://www.vim.org/scripts/script.php?script_id=1218
 [securemodelines]: https://github.com/ciaranm/securemodelines
 [securemodelines documentation]: http://www.vim.org/scripts/script.php?script_id=1876
+[securemodelines bfbecf0]: https://github.com/ciaranm/securemodelines/tree/bfbecf050446814635f3e0809c4f5b60c04b192a
 [javascript-libraries]: https://github.com/othree/javascript-libraries-syntax.vim
 [javascript-libraries documentation]: http://www.vim.org/scripts/script.php?script_id=4428
 [javascript-syntax]: https://github.com/jelera/vim-javascript-syntax
@@ -92,4 +91,3 @@ To get up and running, install vim to the usual location, then:
 This collection is maintained on Github by:
 
 - [Christopher Hopper](https://github.com/christopher-hopper)
-
