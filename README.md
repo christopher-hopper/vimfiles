@@ -64,7 +64,7 @@ To get up and running, install vim to the usual location, then:
 
   |Plugin Name          | Version  | Source              | Vim Documentation                 |
   |---------------------|----------|---------------------|-----------------------------------|
-  | fugitive            | 2.0      | [vim-fugitive][]    | [fugitive documentation][]        |
+  | fugitive            | 2.2      | [vim-fugitive][]    | [fugitive documentation][]        |
   | NERD commenter      | 2.3.0    | [nerdcommenter][]   | [NERD_commenter documentation][]  |
   | Secure Modelines    | 20140926 | [securemodelines][] | [securemodelines documentation][] |
 
