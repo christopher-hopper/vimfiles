@@ -17,10 +17,10 @@ if v:progname =~? "evim"
 endif
 
 " Add bundled vim plug-ins to the runtime path.
-" Node.vim - moll/vim-node
-set runtimepath^=$HOME/.vim/bundle/node,$VIM/vimfiles/bundle/node
-" javascript-syntax - jelera/vim-javascript-syntax
-set runtimepath^=$HOME/.vim/bundle/javascript-syntax,$VIM/vimfiles/bundle/javascript-syntax
+execute pathogen#infect('bundle/{}')
+execute pathogen#helptags()
+" javascript-libraries-syntax - othree/javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'jquery,angularjs'
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
