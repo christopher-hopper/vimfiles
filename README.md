@@ -62,18 +62,30 @@ To get up and running, install vim to the usual location, then:
   
   At the time of writing, the following plug-ins have been included and configured as part of vimfiles:
 
-  |Plugin Name          | Version  | Source              | Vim Documentation                 |
-  |---------------------|----------|---------------------|-----------------------------------|
-  | fugitive            | 2.2      | [vim-fugitive][]    | [fugitive documentation][]        |
-  | NERD commenter      | 2.3.0    | [nerdcommenter][]   | [NERD_commenter documentation][]  |
-  | Secure Modelines    | 20140926 | [securemodelines][] | [securemodelines documentation][] |
+  | Plugin Name          | Version  | Source                   | Documentation                          |
+  |----------------------|----------|--------------------------|----------------------------------------|
+  | git                  | 6.0+18   | [vim-git][]              | [fugitive documentation][]             |
+  | fugitive             | 2.2      | [vim-fugitive][]         | [git documentation][]                  |
+  | NERD commenter       | 2.3.0    | [nerdcommenter][]        | [NERD_commenter documentation][]       |
+  | Secure Modelines     | 20140926 | [securemodelines][]      | [securemodelines documentation][]      |
+  | javascript libraries | 0.4      | [javascript-libraries][] | [javascript-libraries documentation][] |
+  | javascript syntax    | 0.8+31   | [javascript-syntax][]    | [javascript-syntax documentation][]    |
+  | node (nodejs)        | 0.8.1+14 | [vim-node][]             | [vim-node documentation][]             |
 
 [vim-fugitive]: https://github.com/tpope/vim-fugitive
 [fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
+[vim-git]: https://github.com/tpope/vim-git
+[git documentation]: http://www.vim.org/scripts/script.php?script_id=1654
 [nerdcommenter]: https://github.com/scrooloose/nerdcommenter
 [NERD_commenter documentation]: http://www.vim.org/scripts/script.php?script_id=1218
 [securemodelines]: https://github.com/ciaranm/securemodelines
 [securemodelines documentation]: http://www.vim.org/scripts/script.php?script_id=1876
+[javascript-libraries]: https://github.com/othree/javascript-libraries-syntax.vim
+[javascript-libraries documentation]: http://www.vim.org/scripts/script.php?script_id=4428
+[javascript-syntax]: https://github.com/jelera/vim-javascript-syntax
+[javascript-syntax documentation]: http://www.vim.org/scripts/script.php?script_id=3425
+[vim-node]: https://github.com/moll/vim-node
+[vim-node documentation]: http://www.vim.org/scripts/script.php?script_id=4674
 
 ## Maintainer
 
