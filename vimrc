@@ -134,6 +134,11 @@ if &term =~ '^xterm'
     " 4 -> underscore solid 
 endif
 
+" *** Mappings ***
+
+" For when you forget to sudo, really Write the file.
+cmap w!! w !sudo tee % >/dev/null
+
 " *** Functions ***
 
 " Highlight all instances of the word under the cursor, when idle.
