@@ -198,19 +198,30 @@ endif
 
 " Got statusline? Make useful.
 if has("statusline")
-    silent! call fugitive#statusline()
-    if exists('*fugitive#statusline') 
-        " Most useful statusline.
-        set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-    else
-        " Useful enough statusline.
-        set statusline=%<%f\ %h%m%r%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-    endif
-
+    " Useful enough statusline.
+    set statusline=%<%f\ %h%m%r%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
     " show statusline always
     set laststatus=2
-
     " turn off ruler
     set noruler
 endif
+
+
+" *** Plugin Options ***
+
+" Set Plugin Options after all plugins are loaded. 
+function! SetPluginOptionsNow()
+
+    " fugitive
+    " Got statusline and fugitive#statusline? Make useful.
+    if has("statusline") && exists('*fugitive#statusline') 
+        " Most useful statusline.
+        set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+    endif
+
+endfunction
+" On the VimEnter event, call the SetPluginOptionsNow function.
+" This happens when starting a new vim session, but after all 
+" plugins are loaded. 
+au VimEnter * call SetPluginOptionsNow()
 
