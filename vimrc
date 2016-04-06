@@ -212,6 +212,12 @@ endif
 " Set Plugin Options after all plugins are loaded. 
 function! SetPluginOptionsNow()
 
+    " NERDCommenter
+    if exists("*NERDComment")
+        " NERDCommenter settings
+        let g:NERDSpaceDelims=1
+    endif
+
     " fugitive
     " Got statusline and fugitive#statusline? Make useful.
     if has("statusline") && exists('*fugitive#statusline') 
