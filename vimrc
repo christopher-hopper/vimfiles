@@ -1,10 +1,10 @@
 " An excellent PHP Web Application Developers vimrc file.
-" 
+"
 " Maintainer:   Christopher Hopper <christopherjfhopper[at]gmail[dot]com>
 " Attribution:  Bram Moolenaar <Bramd[at]vim[dot]org>
 " Source Code:  https://github.com/christopher-hopper/vimfiles
 " Git Remote:   git@github.com:christopher-hopper/vimfiles.git
-" 
+"
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
 "	      for Amiga:  s:.vimrc
@@ -60,7 +60,7 @@ if has('mouse') && has('gui_running')
     " Enable mouse by default for gVim only.
     set mouse=a
     " Turn-off Tear-off menus
-    set guioptions-=t 
+    set guioptions-=t
 endif
 
 " Only do this part when the terminal options enable support for more
@@ -127,11 +127,11 @@ if &term =~ '^xterm'
     let &t_SI = "\<Esc>[4 q"
     " Use a solid block cursor in insert mode
     let &t_SI = "\<Esc>[1 q"
-    " 0 -> block blinking 
-    " 1 -> block blinking 
+    " 0 -> block blinking
+    " 1 -> block blinking
     " 2 -> block solid
-    " 3 -> underscore blinking 
-    " 4 -> underscore solid 
+    " 3 -> underscore blinking
+    " 4 -> underscore solid
 endif
 
 " *** Mappings ***
@@ -209,7 +209,7 @@ endif
 
 " *** Plugin Options ***
 
-" Set Plugin Options after all plugins are loaded. 
+" Set Plugin Options after all plugins are loaded.
 function! SetPluginOptionsNow()
 
     " NERDCommenter
@@ -219,15 +219,15 @@ function! SetPluginOptionsNow()
     endif
 
     " fugitive
-    " Got statusline and fugitive#statusline? Make useful.
-    if has("statusline") && exists('*fugitive#statusline') 
+    " Has statusline and function fugitive#statusline?
+    if has("statusline") && exists('*fugitive#statusline')
         " Most useful statusline.
         set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
     endif
 
 endfunction
 " On the VimEnter event, call the SetPluginOptionsNow function.
-" This happens when starting a new vim session, but after all 
-" plugins are loaded. 
+" This happens when starting a new vim session, but after all
+" plugins are loaded.
 au VimEnter * call SetPluginOptionsNow()
 
