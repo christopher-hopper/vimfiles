@@ -33,12 +33,12 @@ To get up and running, install vim to the usual location, then:
   - To install for the current user only:
 
           [[ -d ~/.vim ]] && mv ~/.vim ~/.vim.original
-          git clone https://github.com/christopher-hopper/vimfiles.git ~/.vim
+          git clone --recursive https://github.com/christopher-hopper/vimfiles.git ~/.vim
   - To install for all users:
 
           [[ -d /usr/share/vim/vimfiles ]] && \
             sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
-          sudo git clone https://github.com/christopher-hopper/vimfiles.git \
+          sudo git clone --recursive https://github.com/christopher-hopper/vimfiles.git \
             /usr/share/vim/vimfiles
 1. **Symlink the vimrc configuration file**
   
