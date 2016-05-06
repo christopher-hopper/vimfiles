@@ -57,16 +57,19 @@ To get up and running, install vim to the usual location, then:
   
   At the time of writing, the following plug-ins have been included and configured as part of vimfiles:
 
-  | Plugin Name          | Version  | Source                   | Documentation                          |
-  |----------------------|----------|--------------------------|----------------------------------------|
-  | pathogen             | 6.0+18   | [vim-pathogen][]         | [vim-pathogen documentation][]         |
-  | git                  | 6.0+18   | [vim-git][]              | [vim-git documentation][]              |
-  | fugitive             | 2.2      | [vim-fugitive][]         | [vim-fugitive documentation][]         |
-  | NERD commenter       | 2.3.0    | [nerdcommenter][]        | [NERD_commenter documentation][]       |
-  | Secure Modelines     | [`bfbecf0`][securemodelines bfbecf0] | [securemodelines][]      | [securemodelines documentation][]      |
-  | javascript libraries | 0.4      | [javascript-libraries][] | [javascript-libraries documentation][] |
-  | javascript syntax    | 0.8+31   | [javascript-syntax][]    | [javascript-syntax documentation][]    |
-  | node (nodejs)        | 0.8.1+14 | [vim-node][]             | [vim-node documentation][]             |
+  | Plugin Name          | Version     | Source                   | Documentation                          |
+  |----------------------|-------------|--------------------------|----------------------------------------|
+  | pathogen             | 2.4         | [vim-pathogen][]         | [vim-pathogen documentation][]         |
+  | git                  | [79f5482][] | [vim-git][]              | [vim-git documentation][]              |
+  | fugitive             | 2.2         | [vim-fugitive][]         | [vim-fugitive documentation][]         |
+  | commentary           | 1.3         | [vim-commentary][]       | [vim-commentary documentation][]       |
+  | repeat               | 1.1         | [vim-repeat][]           | [vim-repeat documentation][]           |
+  | sensible             | 1.1         | [vim-sensible][]         | [vim-sensible documentation][]         |
+  | surround             | 2.1         | [vim-surround][]         | [vim-surround documentation][]         |
+  | Secure Modelines     | [bfbecf0][] | [securemodelines][]      | [securemodelines documentation][]      |
+  | javascript libraries | 0.5         | [javascript-libraries][] | [javascript-libraries documentation][] |
+  | javascript syntax    | 0.8.2       | [javascript-syntax][]    | [javascript-syntax documentation][]    |
+  | node (nodejs)        | 0.8.1+      | [vim-node][]             | [vim-node documentation][]             |
 
 [vim-pathogen]: https://github.com/tpope/vim-pathogen
 [vim-pathogen documentation]: http://www.vim.org/scripts/script.php?script_id=2332
@@ -74,11 +77,18 @@ To get up and running, install vim to the usual location, then:
 [vim-fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-git]: https://github.com/tpope/vim-git
 [vim-git documentation]: http://www.vim.org/scripts/script.php?script_id=1654
-[nerdcommenter]: https://github.com/scrooloose/nerdcommenter
-[NERD_commenter documentation]: http://www.vim.org/scripts/script.php?script_id=1218
+[79f5482]: https://github.com/tpope/vim-git/commit/79f5482
+[vim-commentary]: https://github.com/tpope/vim-commentary
+[vim-commentary documentation]: http://www.vim.org/scripts/script.php?script_id=3695
+[vim-repeat]: https://github.com/tpope/vim-repeat
+[vim-repeat documentation]: http://www.vim.org/scripts/script.php?script_id=2136
+[vim-sensible]: https://github.com/tpope/vim-sensible
+[vim-sensible documentation]: http://www.vim.org/scripts/script.php?script_id=4391
+[vim-surround]: https://github.com/tpope/vim-surround
+[vim-surround documentation]: http://www.vim.org/scripts/script.php?script_id=1697
 [securemodelines]: https://github.com/ciaranm/securemodelines
 [securemodelines documentation]: http://www.vim.org/scripts/script.php?script_id=1876
-[securemodelines bfbecf0]: https://github.com/ciaranm/securemodelines/tree/bfbecf050446814635f3e0809c4f5b60c04b192a
+[bfbecf0]: https://github.com/ciaranm/securemodelines/tree/bfbecf0
 [javascript-libraries]: https://github.com/othree/javascript-libraries-syntax.vim
 [javascript-libraries documentation]: http://www.vim.org/scripts/script.php?script_id=4428
 [javascript-syntax]: https://github.com/jelera/vim-javascript-syntax
