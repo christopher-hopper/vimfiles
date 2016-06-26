@@ -66,7 +66,7 @@ To get up and running, install vim to the usual location, then:
   | repeat               | 1.1         | [vim-repeat][]           | [vim-repeat documentation][]           |
   | sensible             | 1.1         | [vim-sensible][]         | [vim-sensible documentation][]         |
   | surround             | 2.1         | [vim-surround][]         | [vim-surround documentation][]         |
-  | Secure Modelines     | [bfbecf0][] | [securemodelines][]      | [securemodelines documentation][]      |
+  | Secure Modelines     | [9751f29][] | [securemodelines][]      | [securemodelines documentation][]      |
   | javascript libraries | 0.5         | [javascript-libraries][] | [javascript-libraries documentation][] |
   | javascript syntax    | 0.8.2       | [javascript-syntax][]    | [javascript-syntax documentation][]    |
   | node (nodejs)        | 0.8.1+      | [vim-node][]             | [vim-node documentation][]             |
@@ -88,7 +88,7 @@ To get up and running, install vim to the usual location, then:
 [vim-surround documentation]: http://www.vim.org/scripts/script.php?script_id=1697
 [securemodelines]: https://github.com/ciaranm/securemodelines
 [securemodelines documentation]: http://www.vim.org/scripts/script.php?script_id=1876
-[bfbecf0]: https://github.com/ciaranm/securemodelines/tree/bfbecf0
+[9751f29]: https://github.com/ciaranm/securemodelines/tree/9751f29
 [javascript-libraries]: https://github.com/othree/javascript-libraries-syntax.vim
 [javascript-libraries documentation]: http://www.vim.org/scripts/script.php?script_id=4428
 [javascript-syntax]: https://github.com/jelera/vim-javascript-syntax
