@@ -16,15 +16,13 @@ if v:progname =~? "evim"
     finish
 endif
 
-" Add bundled vim plug-ins to the runtime path.
-execute pathogen#infect('bundle/{}')
-execute pathogen#helptags()
-" javascript-libraries-syntax - othree/javascript-libraries-syntax.vim
-let g:used_javascript_libs = 'jquery,angularjs'
-
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+" Add bundled vim plug-ins to the runtime path.
+execute pathogen#infect('bundle/{}')
+execute pathogen#helptags()
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -50,6 +48,9 @@ set expandtab       "Use softtabstop spaces instead of tab characters for indent
 set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc.
 set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
 set autoindent      "Keep indentation from previous line
+
+" javascript-libraries-syntax - othree/javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'jquery,angularjs'
 
 " Syntastic settings
 let g:syntastic_always_populate_loc_list = 1
