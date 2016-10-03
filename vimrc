@@ -120,6 +120,25 @@ else
 
 endif " has("autocmd")
 
+" Got statusline? Make useful.
+if has("statusline")
+    " show statusline always
+    set laststatus=2
+    " turn off ruler
+    set noruler
+    " Most useful statusline.
+    " Statusline: File name
+    set statusline=%<%f\                          " File name
+    set statusline+=%w%h%m%r                      " File options
+    set statusline+=%{fugitive#statusline()}      " Fugitive Git information
+    set statusline+=%#warningmsg#                 " Warning message colours
+    set statusline+=%{SyntasticStatuslineFlag()}  " Syntastic syntax information
+    set statusline+=%*                            " Reset colors
+    set statusline+=%=%y[%{(&ff)}]                " File type and format
+    set statusline+=[%{(&fenc==\"\"?&enc:&fenc)}] " File encoding
+    set statusline+=%k\ %-14.(%l,%c%V%)\ %P       " File navigation
+endif
+
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
 " Only define it when not defined already.
@@ -202,39 +221,4 @@ else
     nmap ,cs :let @*=expand("%")<CR>
     nmap ,cl :let @*=expand("%:p")<CR>
 endif
-
-" Got statusline? Make useful.
-if has("statusline")
-    " Useful enough statusline.
-    set statusline=%<%f\ %h%m%r%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-    " show statusline always
-    set laststatus=2
-    " turn off ruler
-    set noruler
-endif
-
-
-" *** Plugin Options ***
-
-" Set Plugin Options after all plugins are loaded.
-function! SetPluginOptionsNow()
-
-    " NERDCommenter
-    if exists("*NERDComment")
-        " NERDCommenter settings
-        let g:NERDSpaceDelims=1
-    endif
-
-    " fugitive
-    " Has statusline and function fugitive#statusline?
-    if has("statusline") && exists('*fugitive#statusline')
-        " Most useful statusline.
-        set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%{\"[\".(&ff).\"]\ [\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
-    endif
-
-endfunction
-" On the VimEnter event, call the SetPluginOptionsNow function.
-" This happens when starting a new vim session, but after all
-" plugins are loaded.
-au VimEnter * call SetPluginOptionsNow()
 
