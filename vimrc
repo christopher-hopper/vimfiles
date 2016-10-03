@@ -214,7 +214,7 @@ function! SetPluginOptionsNow()
 	" Most useful statusline.
 	" Statusline: File name
 	set statusline=%<%f\                              " File name
-	set statusline+=%w%h%m%r                          " File options
+	set statusline+=%w%h%m%r                          " Flags
 
         if exists('*fugitive#statusline')
             set statusline+=%{fugitive#statusline()}      " Fugitive Git info
@@ -227,10 +227,10 @@ function! SetPluginOptionsNow()
         endif
 
 	set statusline+=%=                                " Right align
-	set statusline+=[%{(&filetype==\"\"?\"none\":&filetype)}]   " File type
+	set statusline+=%y                                " File type
 	set statusline+=[%{(&ff)}]                        " File format
 	set statusline+=[%{(&fenc==\"\"?&enc:&fenc)}]     " File encoding
-	set statusline+=%k\ %-14.(%l,%c%V%)\ %P           " File navigation
+	set statusline+=%k\ %-14.(%l,%c%V%)\ %P           " Navigation
 
         " show statusline always
 	set laststatus=2
