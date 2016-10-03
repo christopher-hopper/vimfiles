@@ -10,7 +10,7 @@ This vim customization collection was created primarily to support development f
 1. Apache configuration and logs
 1. PHP code
 1. Drupal 
-2. JavaScript, including jQuery and nodejs
+1. JavaScript, including jQuery and nodejs
 1. Varnish configurations
 1. Puppet
 1. Vagrant
@@ -65,6 +65,7 @@ To get up and running, install vim to the usual location, then:
   | commentary           | 1.3         | [vim-commentary][]       | [vim-commentary documentation][]       |
   | repeat               | 1.1         | [vim-repeat][]           | [vim-repeat documentation][]           |
   | sensible             | 1.1         | [vim-sensible][]         | [vim-sensible documentation][]         |
+  | syntastic            | 3.7.0+      | [vim-syntastic][]        | [vim-syntastic documentation][]        |
   | surround             | 2.1         | [vim-surround][]         | [vim-surround documentation][]         |
   | Secure Modelines     | [9751f29][] | [securemodelines][]      | [securemodelines documentation][]      |
   | javascript libraries | 0.5         | [javascript-libraries][] | [javascript-libraries documentation][] |
@@ -84,6 +85,8 @@ To get up and running, install vim to the usual location, then:
 [vim-repeat documentation]: http://www.vim.org/scripts/script.php?script_id=2136
 [vim-sensible]: https://github.com/tpope/vim-sensible
 [vim-sensible documentation]: http://www.vim.org/scripts/script.php?script_id=4391
+[vim-syntastic]: https://github.com/scrooloose/syntastic
+[vim-syntastic documentation]: http://www.vim.org/scripts/script.php?script_id=2736
 [vim-surround]: https://github.com/tpope/vim-surround
 [vim-surround documentation]: http://www.vim.org/scripts/script.php?script_id=1697
 [securemodelines]: https://github.com/ciaranm/securemodelines
