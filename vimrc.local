@@ -228,7 +228,11 @@ function! SetPluginOptionsNow()
 	set statusline+=%=                                " Right align
 	set statusline+=%y                                " File type
 	set statusline+=[%{(&ff)}]                        " File format
-	set statusline+=[%{(&fenc==\"\"?&enc:&fenc)}]     " File encoding
+	set statusline+=[
+        set statusline+=%{(&fenc==\"\"?&enc:&fenc)}       " File encoding
+        " Byte Order Mark
+        set statusline+=%{(exists(\"+bomb\")\ &&\ &bomb)?\"\ B,\":\"\"}
+	set statusline+=]
 	set statusline+=%k\ %-14.(%l,%c%V%)\ %P           " Navigation
 
         " show statusline always
