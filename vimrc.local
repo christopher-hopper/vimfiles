@@ -33,6 +33,11 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+" Auto-wrap text using textwidth.
+set formatoptions+=t
+" Allow formatting of long lines in insert mode.
+set formatoptions-=l
+
 " Set the <leader> used in mappings.
 let mapleader=","
 
