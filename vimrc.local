@@ -82,8 +82,7 @@ if &t_Co > 2 || has('gui_running')
 
     " Set the color scheme.
     " See $VIMRUNTIME/colors/*.vim for available color schemes.
-    colorscheme torte
-
+    colorscheme darcula
 endif
 
 " Only do this part when compiled with support for autocommands.

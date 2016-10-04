@@ -31,3 +31,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/darcula"]
+	path = bundle/darcula
+	url = https://github.com/blueshirts/darcula.git
