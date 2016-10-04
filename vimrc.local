@@ -82,7 +82,14 @@ if &t_Co > 2 || has('gui_running')
 
     " Set the color scheme.
     " See $VIMRUNTIME/colors/*.vim for available color schemes.
-    colorscheme darcula
+    colorscheme solarized
+    set background=dark
+    if !has('gui_running')
+        " Solarized terminal emulator colours not defined.
+        " Degrade solarized to 256 terminal colours.
+        let g:solarized_termcolors=256
+    endif
+
 endif
 
 " Only do this part when compiled with support for autocommands.
@@ -210,10 +217,10 @@ function! SetPluginOptionsNow()
 
     " Has statusline
     if has("statusline")
-	" Most useful statusline.
-	" Statusline: File name
-	set statusline=%<%f\                              " File name
-	set statusline+=%w%h%m%r                          " Flags
+        " Most useful statusline.
+        " Statusline: File name
+        set statusline=%<%f\                              " File name
+        set statusline+=%w%h%m%r                          " Flags
 
         if exists('*fugitive#statusline')
             set statusline+=%{fugitive#statusline()}      " Fugitive Git info

@@ -34,3 +34,6 @@
 [submodule "bundle/darcula"]
 	path = bundle/darcula
 	url = https://github.com/blueshirts/darcula.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
