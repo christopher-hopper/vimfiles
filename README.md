@@ -26,30 +26,35 @@ I currently use, test and update this collection of `vimfiles` with vim v7.4, bu
 
 ## Installation
 
-To get up and running, install vim to the usual location, then:
+To get up and running, install Vim to the usual location, then:
 
-1. **Make a back-up of the current vimfiles folder and clone this repository to vimfiles**
+- To install for the _current user_ only:
+
+  ```sh
+  # Backup any existing Vim files folder.
+  [[ -d ~/.vim ]] && mv ~/.vim ~/.vim.original
+  # Clone this project locally.
+  git clone --recursive https://github.com/christopher-hopper/vimfiles.git ~/.vim
+  # Backup any existing Vim Runtime Configuration.
+  [[ -f ~/.vimrc ]] && mv ~/.vimrc ~/.vimrc.orig~
+  # Link to the new Vim Runtime Configuration.
+  ln -s ~/.vim/vimrc.local ~/.vimrc
+  ```
+
+- To install for _all users_:
   
-  - To install for the current user only:
-
-          [[ -d ~/.vim ]] && mv ~/.vim ~/.vim.original
-          git clone --recursive https://github.com/christopher-hopper/vimfiles.git ~/.vim
-  - To install for all users:
-
-          [[ -d /usr/share/vim/vimfiles ]] && \
-            sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
-          sudo git clone --recursive https://github.com/christopher-hopper/vimfiles.git \
-            /usr/share/vim/vimfiles
-1. **Symlink the vimrc configuration file**
-  
-  - To install for the current user only:
-
-          [[ -f ~/.vimrc ]] && mv ~/.vimrc ~/.vimrc.original
-          ln -s ~/.vim/vimrc ~/.vimrc
-  - To install for all users:
-
-          [[ -f /etc/vim/vimrc ]] && sudo mv /etc/vim/vimrc /etc/vimrc.original
-          sudo ln -s /usr/share/vim/vimfiles/vimrc /etc/vim/vimrc
+  ```sh
+  # Backup any existing Vim files folder.
+  [[ -d /usr/share/vim/vimfiles ]] && \
+    sudo mv /usr/share/vim/vimfiles /usr/share/vim/vimfiles.original
+  # Clone this project locally.
+  sudo git clone --recursive https://github.com/christopher-hopper/vimfiles.git \
+    /usr/share/vim/vimfiles
+  # Backup any existing Vim Runtime Configuration.
+  [[ -f /etc/vim/vimrc ]] && sudo mv /etc/vim/vimrc /etc/vimrc.original
+  # Link to the new Vim Runtime Configuration.
+  sudo ln -s /usr/share/vim/vimfiles/vimrc.local /etc/vim/vimrc
+  ```
 
 ## FAQ
 
