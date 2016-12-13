@@ -57,6 +57,9 @@ set autoindent      "Keep indentation from previous line
 " javascript-libraries-syntax - othree/javascript-libraries-syntax.vim
 let g:used_javascript_libs = 'jquery,angularjs'
 
+" JSON settings
+let g:vim_json_syntax_conceal = 1
+
 " Syntastic settings
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_aggregate_errors = 1
