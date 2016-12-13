@@ -75,6 +75,7 @@ To get up and running, install Vim to the usual location, then:
   | Secure Modelines     | [9751f29][] | [securemodelines][]      | [securemodelines documentation][]      |
   | javascript libraries | 0.5         | [javascript-libraries][] | [javascript-libraries documentation][] |
   | javascript syntax    | 0.8.2       | [javascript-syntax][]    | [javascript-syntax documentation][]    |
+  | json                 | [f5e3181][] | [vim-json][]             | [vim-json documentation][]             |
   | node (nodejs)        | 0.8.1+      | [vim-node][]             | [vim-node documentation][]             |
 
 [vim-pathogen]: https://github.com/tpope/vim-pathogen
@@ -101,6 +102,9 @@ To get up and running, install Vim to the usual location, then:
 [javascript-libraries documentation]: http://www.vim.org/scripts/script.php?script_id=4428
 [javascript-syntax]: https://github.com/jelera/vim-javascript-syntax
 [javascript-syntax documentation]: http://www.vim.org/scripts/script.php?script_id=3425
+[vim-json]: https://github.com/elzr/vim-json
+[vim-json documentation]: https://github.com/elzr/vim-json#readme
+[f5e3181]: https://github.com/elzr/vim-json/commit/f5e3181
 [vim-node]: https://github.com/moll/vim-node
 [vim-node documentation]: http://www.vim.org/scripts/script.php?script_id=4674
 
