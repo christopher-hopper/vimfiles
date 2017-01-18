@@ -5,3 +5,4 @@
 " Location:         $VIMFILES/ftdetect/eslint.vim
 
 au BufRead,BufNewFile .eslintrc		set filetype=json
+au BufRead,BufNewFile .eslintignore	set filetype=gitignore
