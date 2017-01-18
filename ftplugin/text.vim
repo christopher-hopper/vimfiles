@@ -1,11 +1,9 @@
 " Vim filetype plugin file                      *filetype*
 " Language:         Text 
 " Maintainer:       Christoper Hopper
-" Latest Revision:  2012-10-17
-" Location:         $VIMFILES/ftplugin/txt.vim
+" Location:         $VIMFILES/ftplugin/text.vim
 
 setlocal comments=:# commentstring=#\ %s 
-setlocal textwidth=80 
-" formatoptions-=
+setlocal textwidth=80 colorcolumn=80
 setlocal formatoptions+=tcroqwn
 setlocal tabstop=4 shiftwidth=4 autoindent smarttab noexpandtab
