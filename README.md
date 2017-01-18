@@ -77,6 +77,7 @@ To get up and running, install Vim to the usual location, then:
   | javascript syntax    | 0.8.2       | [javascript-syntax][]    | [javascript-syntax documentation][]    |
   | json                 | [f5e3181][] | [vim-json][]             | [vim-json documentation][]             |
   | node (nodejs)        | 0.8.1+      | [vim-node][]             | [vim-node documentation][]             |
+  | markdown             | [3c2215b][] | [vim-markdown][]         | [vim-markdown documentation][]         |
 
 [vim-pathogen]: https://github.com/tpope/vim-pathogen
 [vim-pathogen documentation]: http://www.vim.org/scripts/script.php?script_id=2332
@@ -107,6 +108,9 @@ To get up and running, install Vim to the usual location, then:
 [f5e3181]: https://github.com/elzr/vim-json/commit/f5e3181
 [vim-node]: https://github.com/moll/vim-node
 [vim-node documentation]: http://www.vim.org/scripts/script.php?script_id=4674
+[vim-markdown]: https://github.com/tpope/vim-markdown
+[vim-markdown documentation]: https://github.com/tpope/vim-markdown#readme
+[3c2215b]: https://github.com/tpope/vim-markdown/commit/3c2215b
 
 ## Maintainer
 
