@@ -221,6 +221,12 @@ function! ToggleNumber()
     endif
 endfunction
 
+"" Opens an edit command with the path of the currently edited file.
+noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+"" Opens a tab edit command with the path of the currently edited file.
+noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
 if has('win32')
     " Convert slashes to backslashes for Windows.
     nmap ,cs :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
