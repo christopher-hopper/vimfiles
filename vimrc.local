@@ -229,14 +229,14 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 if has('win32')
     " Convert slashes to backslashes for Windows.
-    nmap ,cs :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
-    nmap ,cl :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
+    nmap <Leader>cs :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
+    nmap <Leader>cl :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
 
     " This will copy the path in 8.3 short format, for DOS and Windows 9x
-    nmap ,c8 :let @*=substitute(expand("%:p:8"), "/", "\\", "g")<CR>
+    nmap <Leader>c8 :let @*=substitute(expand("%:p:8"), "/", "\\", "g")<CR>
 else
-    nmap ,cs :let @*=expand("%")<CR>
-    nmap ,cl :let @*=expand("%:p")<CR>
+    nmap <Leader>cs :let @*=expand("%")<CR>
+    nmap <Leader>cl :let @*=expand("%:p")<CR>
 endif
 
 
