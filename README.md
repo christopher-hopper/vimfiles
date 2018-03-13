@@ -16,6 +16,7 @@ This vim customization collection was created primarily to support development f
 1. Vagrant
 1. Markdown documents
 1. ssh client configuration
+1. tmux with vim configuration
 1. git, including merge conflict resolution
 
 ## Requirements
@@ -77,6 +78,7 @@ To get up and running, install Vim to the usual location, then:
   | javascript syntax    | 0.8.2       | [javascript-syntax][]    | [javascript-syntax documentation][]    |
   | json                 | [f5e3181][] | [vim-json][]             | [vim-json documentation][]             |
   | node (nodejs)        | 0.8.1+      | [vim-node][]             | [vim-node documentation][]             |
+  | tmux                 | [b19923f][] | [vim-tmux][]             | [vim-tmux documentation][]             |
   | markdown             | [3c2215b][] | [vim-markdown][]         | [vim-markdown documentation][]         |
 
 [vim-pathogen]: https://github.com/tpope/vim-pathogen
@@ -111,6 +113,9 @@ To get up and running, install Vim to the usual location, then:
 [vim-markdown]: https://github.com/tpope/vim-markdown
 [vim-markdown documentation]: https://github.com/tpope/vim-markdown#readme
 [3c2215b]: https://github.com/tpope/vim-markdown/commit/3c2215b
+[vim-tmux]: https://github.com/tmux-plugins/vim-tmux
+[b19923f]: https://github.com/tmux-plugins/vim-tmux/commit/b19923f
+[vim-tmux documentation]: https://github.com/tmux-plugins/vim-tmux#readme
 
 ## Maintainer
 
