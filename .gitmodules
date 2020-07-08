@@ -46,3 +46,6 @@
 [submodule "bundle/tmux"]
 	path = bundle/tmux
 	url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

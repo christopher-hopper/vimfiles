@@ -54,6 +54,10 @@ set shiftwidth=4    "Indent by 4 spaces when using >>, <<, == etc.
 set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
 set autoindent      "Keep indentation from previous line
 
+" Gutter settings.
+set number          "Show line number in the left gutter
+set relativenumber  "Show the number of lines relative to the cursor
+
 " javascript-libraries-syntax - othree/javascript-libraries-syntax.vim
 let g:used_javascript_libs = 'jquery,angularjs'
 
@@ -176,6 +180,10 @@ endif
 " For when you forget to sudo, really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
+" Turn off search highlight with ESC until next search.
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
 " *** Functions ***
 
 " Highlight all instances of the word under the cursor, when idle.
@@ -284,4 +292,19 @@ endfunction
 " This happens when starting a new vim session, but after all
 " plugins are loaded.
 au VimEnter * call SetPluginOptionsNow()
+
+" NERDtree Options
+"
+" Toggle the NERDTree window.
+map <C-n> :NERDTreeToggle<CR>
+
+" Open NERDTree showing the current file.
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+if has("autocmd")
+
+    " Exit vim if NERDTree is the only split left open.
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+endif
 
