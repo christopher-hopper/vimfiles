@@ -77,7 +77,7 @@ let g:syntastic_style_warning_symbol = '⚠'
 
 " Set the default font
 if has('gui_running')
-    set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
+    set guifont=DejaVu\ Sans\ Mono\ 11
     if has('gui_win32')
         set guifont=DejaVu_Sans_Mono:h10:cANSI
     elseif has("gui_mac") || has("gui_macvim")
