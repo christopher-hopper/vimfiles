@@ -296,7 +296,7 @@ au VimEnter * call SetPluginOptionsNow()
 " NERDtree Options
 "
 " Toggle the NERDTree window.
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle %<CR>
 
 " Open NERDTree showing the current file.
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
