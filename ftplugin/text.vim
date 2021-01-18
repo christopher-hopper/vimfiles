@@ -6,4 +6,4 @@
 setlocal comments=:# commentstring=#\ %s 
 setlocal textwidth=80 colorcolumn=80
 setlocal formatoptions+=tcroqwn
-setlocal tabstop=4 shiftwidth=4 autoindent smarttab noexpandtab
+setlocal tabstop=4 shiftwidth=4 linebreak autoindent smarttab noexpandtab
