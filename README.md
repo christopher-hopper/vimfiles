@@ -70,7 +70,7 @@ To get up and running, install Vim to the usual location, then:
   | fugitive             | 3.7         | [vim-fugitive][]         | [vim-fugitive documentation][]         |
   | commentary           | 1.3         | [vim-commentary][]       | [vim-commentary documentation][]       |
   | repeat               | 1.2         | [vim-repeat][]           | [vim-repeat documentation][]           |
-  | sensible             | 1.1         | [vim-sensible][]         | [vim-sensible documentation][]         |
+  | sensible             | 1.2         | [vim-sensible][]         | [vim-sensible documentation][]         |
   | syntastic            | 3.7.0+      | [vim-syntastic][]        | [vim-syntastic documentation][]        |
   | surround             | 2.1         | [vim-surround][]         | [vim-surround documentation][]         |
   | Secure Modelines     | [9751f29][] | [securemodelines][]      | [securemodelines documentation][]      |
