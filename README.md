@@ -67,7 +67,7 @@ To get up and running, install Vim to the usual location, then:
   |----------------------|-------------|--------------------------|----------------------------------------|
   | pathogen             | 2.4         | [vim-pathogen][]         | [vim-pathogen documentation][]         |
   | git                  | [5143bea][] | [vim-git][]              | [vim-git documentation][]              |
-  | fugitive             | 2.2         | [vim-fugitive][]         | [vim-fugitive documentation][]         |
+  | fugitive             | 3.7         | [vim-fugitive][]         | [vim-fugitive documentation][]         |
   | commentary           | 1.3         | [vim-commentary][]       | [vim-commentary documentation][]       |
   | repeat               | 1.1         | [vim-repeat][]           | [vim-repeat documentation][]           |
   | sensible             | 1.1         | [vim-sensible][]         | [vim-sensible documentation][]         |
