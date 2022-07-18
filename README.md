@@ -66,7 +66,7 @@ To get up and running, install Vim to the usual location, then:
   | Plugin Name          | Version     | Source                   | Documentation                          |
   |----------------------|-------------|--------------------------|----------------------------------------|
   | pathogen             | 2.4         | [vim-pathogen][]         | [vim-pathogen documentation][]         |
-  | git                  | [79f5482][] | [vim-git][]              | [vim-git documentation][]              |
+  | git                  | [5143bea][] | [vim-git][]              | [vim-git documentation][]              |
   | fugitive             | 2.2         | [vim-fugitive][]         | [vim-fugitive documentation][]         |
   | commentary           | 1.3         | [vim-commentary][]       | [vim-commentary documentation][]       |
   | repeat               | 1.1         | [vim-repeat][]           | [vim-repeat documentation][]           |
@@ -87,7 +87,7 @@ To get up and running, install Vim to the usual location, then:
 [vim-fugitive documentation]: http://www.vim.org/scripts/script.php?script_id=2975
 [vim-git]: https://github.com/tpope/vim-git
 [vim-git documentation]: http://www.vim.org/scripts/script.php?script_id=1654
-[79f5482]: https://github.com/tpope/vim-git/commit/79f5482
+[5143bea]: https://github.com/tpope/vim-git/commit/5143bea
 [vim-commentary]: https://github.com/tpope/vim-commentary
 [vim-commentary documentation]: http://www.vim.org/scripts/script.php?script_id=3695
 [vim-repeat]: https://github.com/tpope/vim-repeat
